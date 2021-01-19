@@ -1,0 +1,363 @@
+<!-- C:\Users\alhos\Downloads\editarea_0_8_2\editarea\edit_area\edit_area_full -->
+<!-- <script language="javascript" type="text/javascript" src="..\..\..\Downloads\editarea_0_8_2\editarea\edit_area\edit_area_full.js"></script> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Coding Competition</title>
+    <script language="javascript" type="text/javascript" src="editarea\edit_area\edit_area_full.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/6700/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function() {
+                    alert("Form Data Submitted :)")
+                },
+                error: function() {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
+    <script language="Javascript" type="text/javascript">
+        // initialisation
+        editAreaLoader.init({
+            id: "question_1", // id of the textarea to transform
+            start_highlight: true, // if start with highlight
+            allow_resize: "both",
+            allow_toggle: true,
+            word_wrap: true,
+            language: "en",
+            syntax: "python",
+            toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help",
+            syntax_selection_allow: "java ,python",
+            // EA_load_callback: "editAreaLoaded",
+            show_line_colors: true,
+        });
+        editAreaLoader.init({
+            id: "question_2", // id of the textarea to transform
+            start_highlight: true, // if start with highlight
+            allow_resize: "both",
+            allow_toggle: true,
+            word_wrap: true,
+            language: "en",
+            syntax: "python",
+            toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help",
+            syntax_selection_allow: "java ,python",
+            // EA_load_callback: "editAreaLoaded",
+            show_line_colors: true,
+        });
+        editAreaLoader.init({
+            id: "question_3", // id of the textarea to transform
+            start_highlight: true, // if start with highlight
+            allow_resize: "both",
+            allow_toggle: true,
+            word_wrap: true,
+            language: "en",
+            syntax: "python",
+            toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help",
+            syntax_selection_allow: "java ,python",
+            // EA_load_callback: "editAreaLoaded",
+            show_line_colors: true,
+        });
+        editAreaLoader.init({
+            id: "question_4", // id of the textarea to transform
+            start_highlight: true, // if start with highlight
+            allow_resize: "both",
+            allow_toggle: true,
+            word_wrap: true,
+            language: "en",
+            syntax: "python",
+            toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help",
+            syntax_selection_allow: "java ,python",
+            // EA_load_callback: "editAreaLoaded",
+            show_line_colors: true,
+        });
+        editAreaLoader.init({
+            id: "question_5", // id of the textarea to transform
+            start_highlight: true, // if start with highlight
+            allow_resize: "both",
+            allow_toggle: true,
+            word_wrap: true,
+            language: "en",
+            syntax: "python",
+            toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help",
+            syntax_selection_allow: "java ,python",
+            // EA_load_callback: "editAreaLoaded",
+            show_line_colors: true,
+        });
+        editAreaLoader.init({
+            id: "question_6", // id of the textarea to transform
+            start_highlight: true, // if start with highlight
+            allow_resize: "both",
+            allow_toggle: true,
+            word_wrap: true,
+            language: "en",
+            syntax: "python",
+            toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, |, help",
+            syntax_selection_allow: "java ,python",
+            // EA_load_callback: "editAreaLoaded",
+            show_line_colors: true,
+        });
+    </script>
+
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+        
+        code {
+            color: #000;
+            white-space: pre-wrap;
+            border: 1px solid #d3dce6;
+            background-color: #f6f6f6;
+            padding: 0 3px;
+            border-radius: 4px;
+        }
+        
+        .button {
+            background-color: white;
+            color: black;
+            border: 2px solid #1967d2;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 40px 20px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #1967d2;
+            color: white;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        input,
+        select,
+        label {
+            width: 200px !important;
+            margin: 10px;
+        }
+        
+        img {
+            margin: 60px auto;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+        .text-center {
+            color: #1967d2;
+            text-transform: uppercase;
+            font-size: 23px;
+            margin: -50px 0 80px 0;
+            display: block;
+            text-align: center;
+        }
+        
+        .box {
+            background-color: rgba(25, 103, 210, 0.1);
+            border-radius: 3px;
+            padding: 70px;
+        }
+        
+        .input-container {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        
+        .input-container label {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            pointer-event: none;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .input-container input {
+            border: 0;
+            border-bottom: 1px solid #555;
+            background: transparent;
+            width: 100%;
+            padding: 8px 0 5px 0;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .input-container input:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #1967d2;
+        }
+        /*.btn:after{
+	content:"";
+	position:absolute;
+	background:rgba(0,0,0,0.50);
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+}*/
+        
+        .input-container input:focus~label,
+        .input-container input:valid~label {
+            top: -12px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body></body>
+<!-- <h2>Coding Competition - King Abdullah Academy</h2>
+    <p>by STEAM Club.</p><br><br> -->
+<img src="KAABannerLogo.png" alt="KAA Logo" class="center">
+<!-- <img src="STEAM CLUB.png" alt="STEAM Logo" class="center" width="100" height="100"> -->
+<form id="myForm">
+    <div class="box">
+        <div class="input-container">
+            <input type="text" required="" />
+            <label>Full Name</label>
+        </div>
+        <div class="input-container">
+            <input type="mail" required="" />
+            <label>Student ID</label>
+        </div>
+    </div>
+    <br>
+
+
+    <fieldset>
+        <legend>Question 1</legend>
+        <p>
+            Given a list of numbers, return True if first and last number of a list is same
+        </p>
+        <textarea id="question_1" style="height: 350px; width: 100%" name="question_1">
+#Write your code here
+</textarea>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Question 2</legend>
+        <p>
+            Given a list of numbers, Iterate it and print only those numbers which are divisible of 5
+        </p>
+        <textarea id="question_2" style="height: 350px; width: 100%" name="question_2">
+#Write your code here
+</textarea>
+    </fieldset><br><br>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Question 3</legend>
+        <p>
+            Given a range of first 10 numbers, Iterate from start number to the end number and print the sum of the current number and previous number
+        </p>
+        <textarea id="question_3" style="height: 350px; width: 100%" name="question_3">
+#Write your code here
+</textarea>
+    </fieldset><br><br>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Question 4</legend>
+        <p>
+            Given a two integer numbers return their product and if the product is greater than 1000, then return their sum
+        </p>
+        <textarea id="question_4" style="height: 350px; width: 100%" name="question_4">
+#Write your code here
+</textarea>
+    </fieldset><br><br>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Question 5</legend>
+        <p>
+            Given a string, display only those characters which are present at an even index number.
+        </p>
+        <textarea id="question_5" style="height: 350px; width: 100%" name="question_5">
+#Write your code here
+</textarea>
+    </fieldset><br><br>
+    </fieldset><br><br>
+    <fieldset>
+        <legend>Question 6</legend>
+        <p>
+            Given a string and an integer number n, remove characters from a string starting from zero up to n and return a new string
+        </p>
+        <textarea id="question_6" style="height: 350px; width: 100%" name="question_6 ">
+#Write your code here
+</textarea>
+    </fieldset>
+    <style>
+        form {
+            margin-bottom: 20%;
+        }
+        
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(25, 103, 210, 0.2);
+            text-align: center;
+        }
+        
+        #footer {
+            color: #1967d2;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+
+    <button onclick="SubForm()" class="button ">Submit</button>
+</form>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 18, 2022 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="footer"
+        document.getElementById("footer").innerHTML = hours + "h " +
+            minutes + "m " + seconds + "s "
+            // If the count down is over, write some text 
+
+        if (hours == 0 && minutes < 5) {
+            document.getElementById("footer").style.color = "#bb2121";
+        }
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("footer").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<footer>
+    <div id="footer"></div>
+</footer>
+</body>
+
+</html>
+<!-- <code>hello</code> -->
